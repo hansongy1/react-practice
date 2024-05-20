@@ -1,23 +1,19 @@
 import './App.css';
 import Logo from "./components/Logo"
+import { BrowserView, MobileView } from 'react-device-detect'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Logo />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <BrowserView>
+        데스크톱 브라우저!
+      </BrowserView>
+      <MobileView>
+        모바일 브라우저!
+      </MobileView>
     </div>
   );
 }
