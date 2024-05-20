@@ -4,9 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// header 컴포넌트 등록
+import Header from './layouts/Header';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Header/>
     <App />
   </React.StrictMode>
 );
